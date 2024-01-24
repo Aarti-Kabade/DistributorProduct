@@ -1,0 +1,90 @@
+.custom-input {
+    font-size: 18px; /* Increase input font size */
+    padding: 10px 20px; /* Adjust input padding */
+    border-color: #6c757d; /* Input border color */
+    color: #333; /* Input text color */
+    background-color: #f8f9fa; /* Input background color */
+}
+
+.custom-button {
+    font-size: 18px; /* Increase button font size */
+    padding: 10px 20px; /* Adjust button padding */
+    border-color: #00ff5e; /* Button border color */
+    color: #fff; /* Button text color */
+    background-color: #007bff; /* Button background color */
+}
+
+.custom-button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+    border-color: #0056b3; /* Button border color on hover */
+}
+
+
+
+/* Custom CSS for Supplier Details */
+.supplier-details label {
+    display: inline-block;
+    width: 120px; /* Adjust width as needed */
+    margin-bottom: 5px;
+    color: #333; /* Label text color */
+}
+
+.supplier-details span {
+    display: inline-block;
+    width: calc(100% - 130px); /* Adjust width to occupy remaining space */
+    padding-left: 10px; /* Add padding for better alignment */
+    color: #555; /* Data text color */
+    border-bottom: 1px solid #ccc; /* Add underline to the data */
+    margin-bottom: 5px;
+}
+
+
+
+
+.panel-body .table-striped{
+    border-collapse: collapse; /* Ensures cells share borders */
+  width: 100%; /* Optional: Set table width */
+  border: 1px solid #000; /* Apply border to table */
+
+}
+
+th, td {
+    border: 1px solid #000; /* Apply border to table cells */
+    padding: 8px; /* Optional: Add padding to cells for better spacing */
+  }
+
+
+  /* Define styles for the table */
+.table-striped {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #4cb7e1;
+    color: #333; /* Text color */
+  }
+  
+  /* Define styles for the table header (thead) */
+  .table-striped thead {
+    background-color: #d86b12;
+  }
+  
+  /* Define styles for the table header cells (th) */
+  .table-striped th {
+    padding: 8px;
+  }
+  
+  /* Define styles for the table body cells (td) */
+  .table-striped td {
+    padding: 8px;
+    border: 1px solid #ddd; /* Border color */
+  }
+  
+  /* Define alternate row colors for the table body */
+  .table-striped tbody tr:nth-child(even) {
+    background-color: #fff;
+  }
+  
+  /* Define hover effect for table rows */
+  .table-striped tbody tr:hover {
+    background-color: #f05a5a;
+  }
+  

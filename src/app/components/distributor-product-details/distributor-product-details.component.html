@@ -1,0 +1,58 @@
+<div *ngIf="visit">
+    <div>
+    <div class="distributor-details">
+        <div class="mb-3">
+            <label class="fw-bold" for="distributorId">Distributor ID:</label>
+            <span>{{ distributor.distributorId }}</span>
+        </div>
+        <div class="mb-3">
+            <label class="fw-bold" for="name">Distributor Name:</label>
+            <span>{{ distributor.name }}</span>
+        </div>
+       
+        <div class="mb-3">
+            <label class="fw-bold" for="contact">Contact No:</label>
+            <span>{{ distributor.contactInfo}}</span>
+        </div>
+
+        <div class="mb-3">
+            <label class="fw-bold" for="rigion">Distribution Region:</label>
+            <span>{{ distributor.distributionRegion}}</span>
+        </div>
+
+        <div class="mb-3">
+            <label class="fw-bold" for="Date">order Date:</label>
+            <span>{{ distributor.orderDate}}</span>
+        </div>
+
+    </div>
+
+    <br>
+    
+
+        <div class="panel-body">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Product-Id</th>
+                        <th>Product-Name</th>
+                        <!-- <th>Quantity in Quintal</th> -->
+                        <th>Rate per Ltr</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr *ngFor="let p of distributor.products">
+                        <td>{{p.productId}}</td>
+                        <td>{{p.productName}}</td>
+                        <!-- <td>{{supplier.quantity}}</td> -->
+                        <td>{{p.price}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <button (click)="list()" class="btn btn-primary">Back to Supplier List</button><br>
+

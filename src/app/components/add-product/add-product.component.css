@@ -1,0 +1,39 @@
+/* Add this to your global styles or the component's style file */
+
+.container {
+    background-color: #f4f4f4;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f97ed2;
+  }
+  
+  .card-header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  .btn-success {
+    background-color: #2852a7;
+    color: #fff;
+    border: none;
+  }
+  
+  .btn-success:hover {
+    background-color: #041e52;
+  }
+  

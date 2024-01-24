@@ -1,0 +1,29 @@
+
+<div class="card custom-card">
+    <div class="card-header custom-card-header">
+        <h2 class="text-black">Welcome in the product of Biofuel!</h2>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-4 mb-3" *ngFor="let p of products | async">
+                <div class="card custom-inner-card">
+                    <div class="card-body">
+                        <h3 class="card-title  text-center">Product-Id: {{ p.productId }}</h3>
+                        <br>
+                        <div class="mb-3">
+                            <label class="fw-bold" for="productName">Product Name: </label>
+                            <span class="mb-1"> {{ p.productName }}</span>
+                        </div>
+                        <div class="mb-3">
+                            <label class="fw-bold" for="price">Rate Per Ltr: </label>
+                            <span class="mb-1"> {{ p.price }}</span>
+                        </div>
+                        <div class="text-center">
+                            <button (click)="addDistributor()" class="btn btn-info mx-auto" style="margin-left: 10px">Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

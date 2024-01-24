@@ -1,0 +1,49 @@
+<div class="container mt-5">
+  <div class="card p-4" style="width: 400px; margin: 0 auto;">
+
+    <h2 class="mb-4 text-center">Distributor Form</h2>
+
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Distributor Name</label>
+        <input type="text" class="form-control" id="name" required [(ngModel)]="dist.name" name="name">
+      </div>
+
+
+      <div class="form-group">
+        <label for="contact"> Contact Number</label>
+        <input type="text" class="form-control" id="contact" required [(ngModel)]="dist.contactInfo" name="contact">
+      </div>
+
+      <div class="form-group">
+        <label for="rigion">Distribution Region</label>
+        <input type="text" class="form-control" id="rigion" required [(ngModel)]="dist.distributionRegion"
+          name="rigion">
+      </div>
+
+      <div class="form-group">
+        <label for="Date">Order Date</label>
+        <input type="text" class="form-control" id="Date" required [(ngModel)]="dist.orderDate" name="Date">
+      </div>
+
+      <div class="form-group">
+        <label for="pro">Choose a Product:</label>
+        <select name="pro" id="pro" class="form-control" [(ngModel)]="dist.products[0].productId" required>
+          <option value="" disabled selected>Select a Product:</option>
+          <option *ngFor="let p of products | async" value="{{p.productId}}">{{p.productName}}</option>
+        </select>
+      </div>
+
+      <!-- <div class="form-group">
+        <label for="quantity">Product Quantity</label>
+        <input type="text" placeholder="Enter Quantity " class="form-control" id="quantity" required [(ngModel)]="supp.quantity" name="quantity">
+      </div> -->
+
+      <button type="submit" class="btn btn-success btn-block">Submit</button>
+    </form>
+  </div>
+
+
+</div><div class="text-right mt-3">
+  <button (click)="Product()" class="btn btn-primary" style="margin-right:60px">Back to Product List</button>
+</div>

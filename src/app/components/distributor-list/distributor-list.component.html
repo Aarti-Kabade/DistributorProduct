@@ -1,0 +1,36 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Distributor List</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Distributor-Id</th>
+            <th>Distributor Name</th>
+            <th>Contact Number</th>
+            <th>Distribution Region</th>
+            <th>Order Date</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let d of distributor |  async" >
+            <td>{{d.distributorId}}</td>
+            <td>{{d.name}}</td>
+            <td>{{d.contactInfo}}</td>
+            <td>{{d.distributionRegion}}</td>
+            <td>{{d.orderDate}}</td>
+            
+            <td>
+                <!-- <button (click)="deletePlayer(p.playerId)"  class="btn btn-danger">Delete</button> -->
+              <button (click)="distributorDetails(d.distributorId)" class="btn btn-info" style="margin-left: 10px">Details</button>
+              <!-- <button (click)="updateDetails(p.playerId)" class="btn btn-info" style="margin-left: 10px">Edit</button>  -->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
